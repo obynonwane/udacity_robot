@@ -1,0 +1,47 @@
+import { WeekDays } from "./enum";
+//number, string, boolean
+// objects arrays custom types
+const num1: number = 10;
+const num2: number = 5;
+const isNumber: boolean = true;
+const name1: string = "Obinna";
+
+//defining an aray
+const studentName: string[] = ["adeul", "obinna", "fatou", "yusus"];
+const score: number[] = [90, 100, 200, 80];
+
+//tupple definition
+const studentDetail: [string, string, number] = ["chair", "table", 10];
+
+//defining a union type
+const numberOfchildren: string | number = 10;
+const arrayOfItems: (number | string)[] = ["obinna", 21, "6ft", 80];
+
+const checkUserEntry = () => {
+  if (typeof numberOfchildren == "number") {
+    console.log(`the user supplied numbers`);
+  }
+  if (typeof numberOfchildren == "string") {
+    console.log("The user supplied a string");
+  }
+};
+const sum = () => {
+  console.log(`sum of ${num1} + ${num2} = ${num1 + num2}`);
+  if (typeof name1 == "number") {
+    console.log(isNumber);
+  } else {
+    console.log(!isNumber);
+  }
+};
+const multiply = () => {
+  console.log(`multiplication of ${num1} and ${num2} = ${num1 * num2}`);
+};
+
+const disPlayEnum = () => {
+  console.log(WeekDays.MONDAY);
+};
+
+disPlayEnum();
+checkUserEntry();
+// sum();
+// multiply();

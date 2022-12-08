@@ -4,4 +4,15 @@ enum Weekend {
   Sunday = "Hanna",
 }
 
+enum WeekDays {
+  MONDAY = "MONDAY",
+  TUESDAY = "TUESDAY",
+  WEDNESDAY = "WED",
+  THURSDAY = "THURSDAY",
+  FRIDAY = "FRIDAY",
+  SATURDAY = "SATUR",
+}
+
+export { WeekDays };
+
 export { Weekend };

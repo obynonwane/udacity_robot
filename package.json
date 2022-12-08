@@ -25,6 +25,7 @@
   "dependencies": {
     "@types/node": "^18.11.11",
     "jasmine": "^4.5.0",
-    "jasmine-spec-reporter": "^7.0.0"
+    "jasmine-spec-reporter": "^7.0.0",
+    "supertest": "^6.3.3"
   }
 }
